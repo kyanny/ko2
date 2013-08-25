@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-min.js"></script>
+<script src="/js/app.js"></script>
+</head>
+<body>
+
+<h1>Feed ID: <span data-bind="text: id"></span></h1>
+
+<ul data-bind="foreach: items">
+	<li>
+	  Subject: <span data-bind="text: subject"></span>
+	  URL: <span data-bind="text: url"></span>
+	</li>
+</ul>
+
+</body>
+</html>
